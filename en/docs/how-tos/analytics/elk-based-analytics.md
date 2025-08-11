@@ -34,6 +34,10 @@ Open the &lt;MICRO\_GW\_HOME&gt;/conf/micro-gw.conf file and add the following c
 
 #### Step 1.2 - Enabling Logs
 
+!!! important
+
+    When running WSO2 Microgateway in a containerised environment, the expected runtime MICRO_GW_HOME directory is typically `/home/ballerina/wso2`. Therefore, the `log4j2.properties` file in `MICRO_GW_HOME/conf` must be placed under `/home/ballerina/wso2/conf` folder because the `${sys:carbon.home}` variable may not resolve correctly in containerised environments if the configuration file is not at the expected path.
+
 !!! note
     The LOG4J configuration file `log4j2.properties` is not available in the API Microgateway runtime by default since the logging is carried out by an in-built configuration factory. In order to configure API Microgateway runtime for ELK analytics, create a `log4j2.properties` configuration file in the location &lt;MICRO\_GW\_HOME&gt;/conf/.
 
