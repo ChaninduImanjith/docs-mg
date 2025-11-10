@@ -37,6 +37,8 @@ You need to append the full path of the `/bin` folder of the extracted WSO2 API 
 - Java 17
 
 ##### What versions of WSO2 API-M are compatible with WSO2 API Microgateway 3.2.0?
+-   [WSO2 API Manager 4.6.0](https://apim.docs.wso2.com/en/4.6.0/)
+-   [WSO2 API Manager 4.5.0](https://apim.docs.wso2.com/en/4.5.0/)
 -   [WSO2 API Manager 4.4.0](https://apim.docs.wso2.com/en/4.4.0/)
 -   [WSO2 API Manager 4.3.0](https://apim.docs.wso2.com/en/4.3.0/)
 -   [WSO2 API Manager 4.2.0](https://apim.docs.wso2.com/en/4.2.0/)
@@ -61,6 +63,8 @@ You need to append the full path of the `/bin` folder of the extracted WSO2 API 
     WSO2 API Manager 4.2.0 | 116
     WSO2 API Manager 4.3.0 | 27
     WSO2 API Manager 4.4.0 | G/A
+    WSO2 API Manager 4.5.0 | G/A
+    WSO2 API Manager 4.6.0 | G/A
 
 ##### What version of the Ballerina should be used to write extensions, interceptors, etc for WSO2 API Microgateway 3.2.0?
 
