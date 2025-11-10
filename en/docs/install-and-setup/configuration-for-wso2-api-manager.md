@@ -48,6 +48,8 @@ Follow the instructions below to configure the WSO2 Microgateway Toolkit and th
     | 4.2.0               | v4               | v0.17       |
     | 4.3.0               | v4               | v0.17       |
     | 4.4.0               | v4               | v0.17       |
+    | 4.5.0               | v4               | v0.17       |
+    | 4.6.0               | v4               | v0.17       |
 
     Open the `<MGW_TOOLKIT_HOME>/conf/toolkit-config.toml` file and change the `restVersion` and `dcrVersion` accordingly.
 
