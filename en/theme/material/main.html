@@ -18,6 +18,44 @@
 
 {% extends "base.html" %}
 
+{% block header %}
+<style>
+.md-announce {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: #ff6f00;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.7rem;
+  overflow: auto;
+}
+/* Push the fixed header and content down to make room for the announce bar */
+.md-header {
+  top: 2.0rem;
+}
+.md-container,
+.md-hero {
+  margin-top: 2.0rem;
+}
+.md-announce a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.md-announce a:hover {
+  color: #f0f0f0;
+}
+</style>
+<aside class="md-announce">
+  📢 A newer version of the Immutable Gateway is available. <a href="https://wso2.com/api-platform/docs/api-gateway/deployment/deployment-modes/immutable-gateway/" target="_blank">Refer to the documentation for more details.</a>
+</aside>
+{% include "partials/header.html" %}
+{% endblock %}
+
 {% block analytics %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103065-9"></script>
