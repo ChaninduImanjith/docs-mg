@@ -4,12 +4,14 @@ When applying a U2 (Update 2) update to WSO2 API Microgateway (MGW), you need to
 
 ## Steps to follow during a U2 update
 
-1. After updating to the new U2 level, navigate to the `<MGW_TOOLKIT>/lib/` directory and check for a folder named `platform`. If it is present, remove it.
+1. After updating to the new U2 level, navigate to the `<MGW_TOOLKIT_HOME>
+/lib/` directory and check for a folder named `platform`. If it is present, remove it.
 
     !!! note
         Do not remove the `platform.zip` file.
 
-2. Navigate to `<MGW_TOOLKIT>/lib/gateway-balo/` and check for a folder named `gateway-2020r1-java8-3.2.0`. If it is present, remove it.
+2. Navigate to `<MGW_TOOLKIT_HOME>
+/lib/gateway-balo/` and check for a folder named `gateway-2020r1-java8-3.2.0`. If it is present, remove it.
 
     !!! note
         Do not remove the `gateway-2020r1-java8-3.2.0.balo` file.
