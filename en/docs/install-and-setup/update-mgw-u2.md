@@ -17,7 +17,7 @@ When applying a U2 update to WSO2 API Microgateway (MGW), you need to follow the
     micro-gw init <project-name> -a <api-definition-path>
     ```
 
-4.  Navigate to the generated project directory and build the project using the following command.
+4.  From the same workspace folder, build the project using the following command.
 
     ```bash
     micro-gw build <project-name>
