@@ -1,6 +1,6 @@
-# Updating WSO2 API Microgateway via U2 Update
+# Updating WSO2 API Microgateway via a U2 Update
 
-When applying a U2 (Update 2) to WSO2 API Microgateway (MGW), you need to follow the steps below to ensure the update is applied correctly.
+When applying a U2 update to WSO2 API Microgateway (MGW), you need to follow the steps below to ensure the update is applied correctly.
 
 ## Steps to follow during a U2 update
 
@@ -9,26 +9,23 @@ When applying a U2 (Update 2) to WSO2 API Microgateway (MGW), you need to follow
     !!! note
         Do not remove the `platform.zip` file.
 
-2.  Navigate to `<MGW_TOOLKIT_HOME>/lib/gateway-balo/` directory and remove any extracted gateway folder that corresponds to the `.balo` file present in that directory (for example, `gateway-2020r1-java8-3.2.0`). Match the folder name with the version of the `.balo` file to identify the correct one to remove.
+2.  Navigate to the `<MGW_TOOLKIT_HOME>/lib/gateway-balo/` directory. For each extracted gateway folder (for example, `gateway-2020r1-java8-3.2.0`) that has a corresponding `.balo` file of the same name, remove the extracted folder but keep the `.balo` file.
 
-    !!! note
-        Do not remove the `.balo` file itself.
-
-3.  Create a new folder and initialize a new project using the following command.
+3.  From the `<MGW_TOOLKIT_HOME>/bin` directory, create a new folder and initialize a new project inside it using the following command.
 
     ```bash
     micro-gw init <project-name> -a <api-definition-path>
     ```
 
-4.  Build the project using the following command.
+4.  From the same `<MGW_TOOLKIT_HOME>/bin` directory, build the project using the following command.
 
     ```bash
     micro-gw build <project-name>
     ```
 
-    This generates a runnable JAR file for the project inside the `target` directory.
+    This generates a runnable JAR file for the project inside the `target` directory of the project.
 
-5.  Deploy the API by starting WSO2 API Microgateway using the generated JAR file from the previous step.
+5.  Deploy the API by starting WSO2 API Microgateway using the generated JAR file from the previous step. Run this command from the `<MGW_TOOLKIT_HOME>/bin` directory.
 
     ```bash
     gateway <path-to-generated-JAR-file>
